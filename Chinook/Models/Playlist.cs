@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 
 namespace Chinook.Models
 {
@@ -11,6 +12,7 @@ namespace Chinook.Models
         }
 
         public long PlaylistId { get; set; }
+        [DefaultValue("My favorite tracks")]
         public string? Name { get; set; }
 
         public virtual ICollection<Track> Tracks { get; set; }
