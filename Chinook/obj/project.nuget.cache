@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NuCWZkIweMFJcXn2BzoiLpFHtp8NhBMf6sgxqnl4S9a2/yrVIM7MehAqaBc4LUHHpKuaQwIBwG5eDnP80pv39w==",
+  "dgSpecHash": "0yf2i/fzD0j2+r2mjnmaYosAhJk70g3ZDmhxSon9X9/N0CH0ivdm/H0dVwY5duOh8qbun7dM5BZmeBtUX1bAmg==",
   "success": true,
   "projectFilePath": "C:\\Users\\jsarw\\Source\\Repos\\Chinook\\Chinook\\Chinook.csproj",
   "expectedPackageFiles": [
@@ -59,8 +59,10 @@
     "C:\\Users\\jsarw\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\7.0.8\\microsoft.aspnetcore.cryptography.internal.7.0.8.nupkg.sha512",
     "C:\\Users\\jsarw\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\7.0.8\\microsoft.aspnetcore.cryptography.keyderivation.7.0.8.nupkg.sha512",
     "C:\\Users\\jsarw\\.nuget\\packages\\microsoft.aspnetcore.diagnostics.entityframeworkcore\\7.0.8\\microsoft.aspnetcore.diagnostics.entityframeworkcore.7.0.8.nupkg.sha512",
+    "C:\\Users\\jsarw\\.nuget\\packages\\microsoft.aspnetcore.html.abstractions\\2.2.0\\microsoft.aspnetcore.html.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\jsarw\\.nuget\\packages\\microsoft.aspnetcore.identity.entityframeworkcore\\7.0.8\\microsoft.aspnetcore.identity.entityframeworkcore.7.0.8.nupkg.sha512",
     "C:\\Users\\jsarw\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\7.0.8\\microsoft.aspnetcore.identity.ui.7.0.8.nupkg.sha512",
+    "C:\\Users\\jsarw\\.nuget\\packages\\microsoft.aspnetcore.razor\\2.2.0\\microsoft.aspnetcore.razor.2.2.0.nupkg.sha512",
     "C:\\Users\\jsarw\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.11\\microsoft.aspnetcore.razor.language.6.0.11.nupkg.sha512",
     "C:\\Users\\jsarw\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\6.0.0\\microsoft.bcl.asyncinterfaces.6.0.0.nupkg.sha512",
     "C:\\Users\\jsarw\\.nuget\\packages\\microsoft.build\\17.3.2\\microsoft.build.17.3.2.nupkg.sha512",

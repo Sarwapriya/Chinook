@@ -1,7 +1,6 @@
 ﻿@page "/"
 @attribute [Authorize]
 
-
 <PageTitle>Index</PageTitle>
 
 <h1>Artists</h1>
@@ -12,6 +11,10 @@
 }
 else
 {
+    <p>
+        Movie Title: <input type="text" name="SearchString">
+        <input type="submit" value="Filter" />
+    </p>
     <table class="table table-striped table-hover table-sm">
         <thead>
             <tr>
