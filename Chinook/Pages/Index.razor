@@ -12,8 +12,8 @@
 else
 {
     <p>
-        Movie Title: <input type="text" name="SearchString">
-        <input type="submit" value="Filter" />
+        Artist Name: <input type="text" name="SearchString">
+        <input type="submit" value="@Artists.SelectMany(m=> m.Name)" />
     </p>
     <table class="table table-striped table-hover table-sm">
         <thead>
