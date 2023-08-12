@@ -12269,11 +12269,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\jsarw\\Downloads\\Chinook\\Chinook\\Chinook\\Chinook.csproj",
+      "projectUniqueName": "C:\\Users\\jsarw\\Source\\Repos\\Chinook\\Chinook\\Chinook.csproj",
       "projectName": "Chinook",
-      "projectPath": "C:\\Users\\jsarw\\Downloads\\Chinook\\Chinook\\Chinook\\Chinook.csproj",
+      "projectPath": "C:\\Users\\jsarw\\Source\\Repos\\Chinook\\Chinook\\Chinook.csproj",
       "packagesPath": "C:\\Users\\jsarw\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\jsarw\\Downloads\\Chinook\\Chinook\\Chinook\\obj\\",
+      "outputPath": "C:\\Users\\jsarw\\Source\\Repos\\Chinook\\Chinook\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\jsarw\\AppData\\Roaming\\NuGet\\NuGet.Config",
