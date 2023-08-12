@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Components;
 using Microsoft.EntityFrameworkCore;
 using System.Security.Claims;
+using Chinook.ClientModels;
 
 namespace Chinook.Pages
 {

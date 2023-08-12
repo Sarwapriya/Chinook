@@ -16,6 +16,7 @@ namespace Chinook.Pages
         private Modal PlaylistDialog { get; set; }
 
         private Artist Artist;
+        private ClientModels.Playlist Playlist;
         private List<PlaylistTrack> Tracks;
         private DbContext DbContext;
         private PlaylistTrack SelectedTrack;
@@ -65,8 +66,35 @@ namespace Chinook.Pages
             PlaylistDialog.Open();
         }
 
-        public void AddTrackToPlaylist()
+        public async Task AddTrackToPlaylist()
         {
+            var DbContext = await DbFactory.CreateDbContextAsync();
+
+            Artist = DbContext.Artists.SingleOrDefault(a => a.Name == Artist.Name);
+            var album = DbContext.Albums.SingleOrDefault(a => a.Title == SelectedTrack.AlbumTitle);
+            if (Artist == null)
+            {
+                var Tracks = DbContext.Tracks.Where(a => a.Name == SelectedTrack.TrackName && a.Album.ArtistId == Artist.ArtistId)
+                .Include(a => a.Album).Where(a => a.Album.Title == SelectedTrack.AlbumTitle);
+                if (!Tracks.Any())
+                {
+
+                    var playlist = new Models.Playlist();
+                    playlist.Name = "My favorite tracks";
+
+                    playlist.Tracks.Add(new Track
+                    {
+                        Name = SelectedTrack.TrackName,
+                        AlbumId = album?.AlbumId,
+                        Milliseconds = 0,
+                        MediaTypeId = 0,
+
+                    });
+                    DbContext.SaveChanges();
+                }
+            }
+
+
             CloseInfoMessage();
             InfoMessage = $"Track {Artist.Name} - {SelectedTrack.AlbumTitle} - {SelectedTrack.TrackName} added to playlist {{playlist name}}.";
             PlaylistDialog.Close();
