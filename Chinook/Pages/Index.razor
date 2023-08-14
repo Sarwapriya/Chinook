@@ -1,5 +1,6 @@
 ﻿@page "/"
 @attribute [Authorize]
+@serchText
 
 <PageTitle>Index</PageTitle>
 
@@ -12,14 +13,7 @@
 else
 {
     <p>
-        @*@using (Microsoft.AspNetCore.Html.BeginForm("GetValue", "Home"))
-        {
-
-            <input id="Text1" type="text" name="txtOne" />
-            <input id="Button1" type="submit" value="button" />
-        }
-        Artist Name: <input id="serchTestBox" type="text" name="SearchString" @onchange="GetArtistByName(valu)">
-        <button class="btn btn-success" @onclick="GetArtistByName(serchTestBox)">Search</button>*@
+        Artist Name: <input id="serchTestBox" type="text" name="SearchString" @bind="@serchText" @oninput="GetArtistByName">
     </p>
     <table class="table table-striped table-hover table-sm">
         <thead>
