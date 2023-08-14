@@ -22,7 +22,7 @@ namespace Chinook.Pages
         private PlaylistTrack SelectedTrack;
         private string InfoMessage;
         private string CurrentUserId;
-        public async Task OnInitializedAsync()
+        protected override async Task OnInitializedAsync()
         {
             CurrentUserId = await GetUserId();
             var DbContext = await DbFactory.CreateDbContextAsync();
